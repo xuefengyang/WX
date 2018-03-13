@@ -77,7 +77,7 @@
 
 		public function getSignasture($noncestr,$timestamp,$url){
 			$ticket = $this->getTicket();
-			if ($ticket) {
+			if (empty($ticket)) {
 				throw new Exception("Error Processing Request", 1);
 			}	
 			$string = "jsapi_ticket=".$ticket."&noncestr=".$noncestr."&timestamp=".$timestamp."&url=".$url;
