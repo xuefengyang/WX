@@ -7,7 +7,6 @@
 		
 		const WX_APP_ID = '';
 		const WX_SECRET = '';	
-
 		public $cache = '';
 
 		function __construct(){
